@@ -1,107 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Udemy</title>
-    <link rel="stylesheet" href="./stlyle.css" />
-  </head>
 
-  <body>
-    <nav>
-      <svg
-        class="logo"
-        viewBox="0 0 91 34"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M14.05 8.112L7.024 4.056 0 8.112V4.056L7.025 0l7.026 4.056v4.056h-.001z"
-          fill="#A435F0"
-        />
-        <path
-          d="M0 11.518h3.68v8.941c0 2.31 1.725 3.436 3.345 3.436 1.634 0 3.346-1.156 3.346-3.467v-8.91h3.68v9.154c0 2.128-.669 3.77-2.007 4.896-1.339 1.125-3.011 1.673-5.05 1.673-2.037 0-3.71-.547-5.017-1.673C.669 24.443 0 22.862 0 20.763v-9.245zM45.866 22.63c-1.114.992-2.383 1.478-3.83 1.478-2.64 0-4.41-1.504-4.61-3.833h11.89s.08-.752.08-1.458c0-2.19-.7-4.015-2.13-5.505-1.398-1.49-3.222-2.22-5.443-2.22-2.341 0-4.258.73-5.779 2.22-1.49 1.49-2.25 3.436-2.25 5.87v.12c0 2.403.76 4.319 2.25 5.749 1.49 1.429 3.467 2.159 5.87 2.159 2.794 0 5.017-1.102 6.685-3.002l-2.733-1.578zm-6.994-7.463c.82-.639 1.825-.973 2.95-.973 1.064 0 1.946.334 2.707 1.004.726.61 1.118 1.359 1.152 2.22H37.52c.118-.89.568-1.64 1.353-2.25zM82.91 29.276C81.417 32.801 79.855 34 77.46 34H75.8v-3.262h1.342c.824 0 1.59-.31 2.32-1.994l.73-1.686-6.296-15.54h3.741l4.471 11.192 4.593-11.192h3.74l-7.53 17.758zM28.377 5.649v7.257c-1.206-1.08-3.082-1.723-4.896-1.723-2.16 0-3.984.76-5.474 2.31-1.46 1.521-2.19 3.406-2.19 5.687 0 2.282.73 4.167 2.19 5.718 1.49 1.521 3.315 2.282 5.474 2.282 2.49 0 4.064-.979 4.896-1.746v1.411h3.65V5.65h-3.65zm-1.095 16.878c-.882.882-2.007 1.339-3.315 1.339-1.308 0-2.372-.457-3.254-1.339-.85-.882-1.277-2.007-1.277-3.345 0-1.339.426-2.464 1.277-3.346.882-.882 1.946-1.338 3.254-1.338s2.433.456 3.315 1.338c.912.882 1.37 2.007 1.37 3.346 0 1.338-.458 2.463-1.37 3.345zM68.222 11.214c-2.772 0-4.213 1.15-5.2 2.258-.395-.753-1.507-2.258-4.105-2.258-2.196 0-3.49 1.11-4.136 1.9V11.52h-3.618v15.327h3.618v-8.82c0-2.068 1.278-3.558 2.98-3.558 1.735 0 2.738 1.308 2.738 3.406v8.971h3.619v-8.82c0-2.098 1.246-3.558 3.04-3.558 1.734 0 2.737 1.308 2.737 3.405v8.972h3.65v-9.488c0-3.996-2.148-6.142-5.323-6.142z"
-          fill="#000"
-        />
-      </svg>
-      <a href="#">Categories</a>
-      <div class="search-bar">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-6 h-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-          />
-        </svg>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Udemy</title>
+  <link rel="stylesheet" href="./stlyle.css" />
+</head>
 
-        <input type="text" name="search" placeholder="search for anything" />
-      </div>
-      <a href="#">Udemy Business</a>
-      <a href="#">Teach on Udemy</a>
-      <svg
-        class="cart"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="w-6 h-6"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-        />
+<body>
+  <nav>
+    <svg class="logo" viewBox="0 0 91 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.05 8.112L7.024 4.056 0 8.112V4.056L7.025 0l7.026 4.056v4.056h-.001z" fill="#A435F0" />
+      <path
+        d="M0 11.518h3.68v8.941c0 2.31 1.725 3.436 3.345 3.436 1.634 0 3.346-1.156 3.346-3.467v-8.91h3.68v9.154c0 2.128-.669 3.77-2.007 4.896-1.339 1.125-3.011 1.673-5.05 1.673-2.037 0-3.71-.547-5.017-1.673C.669 24.443 0 22.862 0 20.763v-9.245zM45.866 22.63c-1.114.992-2.383 1.478-3.83 1.478-2.64 0-4.41-1.504-4.61-3.833h11.89s.08-.752.08-1.458c0-2.19-.7-4.015-2.13-5.505-1.398-1.49-3.222-2.22-5.443-2.22-2.341 0-4.258.73-5.779 2.22-1.49 1.49-2.25 3.436-2.25 5.87v.12c0 2.403.76 4.319 2.25 5.749 1.49 1.429 3.467 2.159 5.87 2.159 2.794 0 5.017-1.102 6.685-3.002l-2.733-1.578zm-6.994-7.463c.82-.639 1.825-.973 2.95-.973 1.064 0 1.946.334 2.707 1.004.726.61 1.118 1.359 1.152 2.22H37.52c.118-.89.568-1.64 1.353-2.25zM82.91 29.276C81.417 32.801 79.855 34 77.46 34H75.8v-3.262h1.342c.824 0 1.59-.31 2.32-1.994l.73-1.686-6.296-15.54h3.741l4.471 11.192 4.593-11.192h3.74l-7.53 17.758zM28.377 5.649v7.257c-1.206-1.08-3.082-1.723-4.896-1.723-2.16 0-3.984.76-5.474 2.31-1.46 1.521-2.19 3.406-2.19 5.687 0 2.282.73 4.167 2.19 5.718 1.49 1.521 3.315 2.282 5.474 2.282 2.49 0 4.064-.979 4.896-1.746v1.411h3.65V5.65h-3.65zm-1.095 16.878c-.882.882-2.007 1.339-3.315 1.339-1.308 0-2.372-.457-3.254-1.339-.85-.882-1.277-2.007-1.277-3.345 0-1.339.426-2.464 1.277-3.346.882-.882 1.946-1.338 3.254-1.338s2.433.456 3.315 1.338c.912.882 1.37 2.007 1.37 3.346 0 1.338-.458 2.463-1.37 3.345zM68.222 11.214c-2.772 0-4.213 1.15-5.2 2.258-.395-.753-1.507-2.258-4.105-2.258-2.196 0-3.49 1.11-4.136 1.9V11.52h-3.618v15.327h3.618v-8.82c0-2.068 1.278-3.558 2.98-3.558 1.735 0 2.738 1.308 2.738 3.406v8.971h3.619v-8.82c0-2.098 1.246-3.558 3.04-3.558 1.734 0 2.737 1.308 2.737 3.405v8.972h3.65v-9.488c0-3.996-2.148-6.142-5.323-6.142z"
+        fill="#000" />
+    </svg>
+    <a href="#">Categories</a>
+    <div class="search-bar">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
       </svg>
-      <button class="log-in">Log in</button>
-      <button class="sign-up">Sign Up</button>
-      <svg
-        class="globe"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="w-6 h-6"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
-        />
-      </svg>
-    </nav>
-    <div class="splash">
-      <div class="background">
-        <img
-          width="1340"
-          height="400"
-          alt=""
-          src="https://img-c.udemycdn.com/notices/web_banner/slide_2_image_udlite/1ad787a8-9eda-4af6-acc6-44f2f7ca0a77.jpg"
-        />
-      </div>
-      <div class="content">
-        <h1>Subcribe to results</h1>
-        <p>
-          Polish new skills with practice exercises. Personal Plan comes with a
-          <a href="">free trial</a> for new subscribers.
-        </p>
-      </div>
+
+      <input type="text" name="search" placeholder="search for anything" />
     </div>
-    <div class="text">
-      <h1>A broad selection of courses</h1>
+    <a href="#">Udemy Business</a>
+    <a href="#">Teach on Udemy</a>
+    <svg class="cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+    </svg>
+    <button class="log-in">Log in</button>
+    <button class="sign-up">Sign Up</button>
+    <svg class="globe" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+    </svg>
+  </nav>
+  <div class="splash">
+    <div class="background">
+      <img width="1340" height="400" alt=""
+        src="https://img-c.udemycdn.com/notices/web_banner/slide_2_image_udlite/1ad787a8-9eda-4af6-acc6-44f2f7ca0a77.jpg" />
+    </div>
+    <div class="content">
+      <h1>Subcribe to results</h1>
       <p>
-        Choose from 213,000 online video courses with new additions published
-        every month
+        Polish new skills with practice exercises. Personal Plan comes with a
+        <a href="">free trial</a> for new subscribers.
       </p>
     </div>
-  </body>
+  </div>
+  <div class="text">
+    <h1>A broad selection of courses</h1>
+    <p>
+      Choose from 213,000 online video courses with new additions published
+      every month
+    </p>
+  </div>
+  <div class="skills">
+    <span id="python">Python</span><span>Excel</span><span>Web development</span><span>Java script</span><span>Data
+      science</span><span>AWS certification</span><span>Drawing</span>
+  </div>
+  <section class="section1">
+    <div class="c1">
+      <h1>Expand your career opportunities with Python</h1>
+      <p>
+        Take one of Udemy’s range of Python courses and learn how to code
+        using this incredibly useful language. Its simple syntax and
+        readability makes Python perfect for Flask, Django, data science, and
+        machine learning. You’ll learn how to build everything from games to
+        sites to apps. Choose from a range of courses that will appeal to both
+        beginners and advanced developers alike.
+      </p>
+      <button>Explore Python</button>
+    </div>
+    <div class="container">
+      <div class="media">
+        <img src="./images/1st.PNG" alt="" />
+        <h4>Learn Python: The Complete Python Programming Course</h4>
+        <p>Avinash Jain, The Codex</p>
+        <span>4.3 <img src="./images/1.PNG" />
+          (3,978)
+        </span>
+        <p>$11.99</p>
+      </div>
+      <div class="media">
+        <img src="./images/2nd.PNG" alt="" />
+        <h4>Learnig Python for data analysis and vitualisation</h4>
+        <p>Jose Potilla</p>
+        <span>4.3 <img src="./images/1.PNG" />
+          (18,478)
+        </span>
+        <p>$14.99</p>
+        <button>Bestseller</button>
+      </div>
+      <div class="media">
+        <img src="./images/3rd.PNG" alt="" />
+        <h4>Python for Beginners - Learn Programming from scratch</h4>
+        <p>Edwin Dias Coding Faculty Solution</p>
+        <span>4.3 <img src="./images/1.PNG" />
+          (2,243)
+        </span>
+        <p>$9.99</p>
+      </div>
+      <div class="media">
+        <img src="./images/4th.PNG" alt="" />
+        <h4>Learn Python: The Complete Python Programming Course</h4>
+        <p>Adamas Kinfu</p>
+        <span>4.3 <img src="./images/1.PNG" />
+          (2,200)
+        </span>
+        <p>$12.99</p>
+        <button>Bestseller</button>
+      </div>
+      <div class="media">
+        <img src="./images/5th.PNG" alt="" />
+        <h4>Learn Python: The Complete Python Programming Course</h4>
+        <p>Braison Payne</p>
+        <span>4.3 <img src="./images/1.PNG" />
+          (9,024)
+        </span>
+        <p>$10.99</p>
+        <button>Bestseller</button>
+      </div>
+    </div>
+  </section>
+  <section class="section2">
+    <h2>Subscribe to Udemy's top courses with <a href="#">Personal Plan</a>
+    </h2>
+    <p>Streamline your career goals with a collection of our top courses</p>
+
+  </section>
+  <section class="section3">
+    <div class="img"><img class="non-student-cta--non-student-cta-image--7Y7Ul non-student-cta--on-desktop--2bk9D"
+        data-purpose="desktop-non-student-cta-image" alt="" width="400" height="400"
+        src="home/non-student-cta/instructor-1x-v3.jpg"
+        srcset="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg 1x, https://s.udemycdn.com/home/non-student-cta/instructor-2x-v3.jpg 2x">
+    </div>
+    <div class="texts">
+      <h1>Become an instructor</h1>
+      <p>Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach
+        what you love.</p>
+      <button>Start teaching today</button>
+    </div>
+  </section>
+  <section class="section4">
+    <h1>Trusted by over 13,400 great teams</h1>
+    <p>Leading companies use the same courses to help employees keep their skills fresh.</p>
+
+  </section>
+  <footer>
+    <div class="href">
+      <div class="atag">
+        <a href="#">Udemy Business</a>
+        <a href="#">Teach on Udemy</a>
+        <a href="#">Get the App</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="atag">
+        <a href="#">Careers</a>
+        <a href="#">Blogs</a>
+        <a href="#">Help and Support</a>
+        <a href="#">Affiliate</a>
+        <a href="#">Investors</a>
+      </div>
+      <div class="atag">
+        <a href="#">Terms</a>
+        <a href="#">Site Map</a>
+        <a href="#">Privacy Policies</a>
+        <a href="#">Cookies settings</a>
+        <a href="#">Accessibility Statement</a>
+      </div>
+      <div class="select">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+        </svg>
+        <select>
+          <option value="english">ENGLISH</option>
+          <option value="espanol">ESPANOL</option>
+        </select>
+      </div>
+    </div>
+    <div class="copyright">
+      <svg class="logo" viewBox="0 0 91 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.05 8.112L7.024 4.056 0 8.112V4.056L7.025 0l7.026 4.056v4.056h-.001z" fill="#A435F0" />
+        <path
+          d="M0 11.518h3.68v8.941c0 2.31 1.725 3.436 3.345 3.436 1.634 0 3.346-1.156 3.346-3.467v-8.91h3.68v9.154c0 2.128-.669 3.77-2.007 4.896-1.339 1.125-3.011 1.673-5.05 1.673-2.037 0-3.71-.547-5.017-1.673C.669 24.443 0 22.862 0 20.763v-9.245zM45.866 22.63c-1.114.992-2.383 1.478-3.83 1.478-2.64 0-4.41-1.504-4.61-3.833h11.89s.08-.752.08-1.458c0-2.19-.7-4.015-2.13-5.505-1.398-1.49-3.222-2.22-5.443-2.22-2.341 0-4.258.73-5.779 2.22-1.49 1.49-2.25 3.436-2.25 5.87v.12c0 2.403.76 4.319 2.25 5.749 1.49 1.429 3.467 2.159 5.87 2.159 2.794 0 5.017-1.102 6.685-3.002l-2.733-1.578zm-6.994-7.463c.82-.639 1.825-.973 2.95-.973 1.064 0 1.946.334 2.707 1.004.726.61 1.118 1.359 1.152 2.22H37.52c.118-.89.568-1.64 1.353-2.25zM82.91 29.276C81.417 32.801 79.855 34 77.46 34H75.8v-3.262h1.342c.824 0 1.59-.31 2.32-1.994l.73-1.686-6.296-15.54h3.741l4.471 11.192 4.593-11.192h3.74l-7.53 17.758zM28.377 5.649v7.257c-1.206-1.08-3.082-1.723-4.896-1.723-2.16 0-3.984.76-5.474 2.31-1.46 1.521-2.19 3.406-2.19 5.687 0 2.282.73 4.167 2.19 5.718 1.49 1.521 3.315 2.282 5.474 2.282 2.49 0 4.064-.979 4.896-1.746v1.411h3.65V5.65h-3.65zm-1.095 16.878c-.882.882-2.007 1.339-3.315 1.339-1.308 0-2.372-.457-3.254-1.339-.85-.882-1.277-2.007-1.277-3.345 0-1.339.426-2.464 1.277-3.346.882-.882 1.946-1.338 3.254-1.338s2.433.456 3.315 1.338c.912.882 1.37 2.007 1.37 3.346 0 1.338-.458 2.463-1.37 3.345zM68.222 11.214c-2.772 0-4.213 1.15-5.2 2.258-.395-.753-1.507-2.258-4.105-2.258-2.196 0-3.49 1.11-4.136 1.9V11.52h-3.618v15.327h3.618v-8.82c0-2.068 1.278-3.558 2.98-3.558 1.735 0 2.738 1.308 2.738 3.406v8.971h3.619v-8.82c0-2.098 1.246-3.558 3.04-3.558 1.734 0 2.737 1.308 2.737 3.405v8.972h3.65v-9.488c0-3.996-2.148-6.142-5.323-6.142z"
+          fill="#000" />
+      </svg>
+      <p>© 2022 Udemy, Inc.</p>
+    </div>
+    </div>
+  </footer>
+</body>
+
 </html>
