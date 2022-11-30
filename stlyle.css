@@ -216,10 +216,12 @@ div.content p {
     background-color: gold;
     border: none;
     outline: none;
+    margin-top: 12px;
   }
   .card h4.title{
       margin-top:0;
       margin-bottom:0;
+      font-size: small;
       
   }
   .card p{
@@ -235,6 +237,7 @@ div.content p {
   .rating img{
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 8px;
   }
   
 .section2 {
