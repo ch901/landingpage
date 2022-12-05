@@ -299,8 +299,9 @@ div.content p {
     list-style-type: none;
     margin-right: 50px;
 }
-.personal-plan-rate li.star{
-    
+.personal-plan-rate ul li.star{
+    display: inline;
+
 }
 .section6{
     display: flex;
